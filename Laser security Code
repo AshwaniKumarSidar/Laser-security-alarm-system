@@ -1,0 +1,30 @@
+// Code by Ashwani sidar
+
+void setup() {
+
+pinMode(10,OUTPUT); //Buzzer Pin
+
+pinMode(7,INPUT); // LDR Sensor
+
+}
+
+void loop() {
+
+if(digitalRead(7)==LOW ) // If LDR densor Digital LOW then Buzzer will be turn on for given Time
+
+{
+
+digitalWrite(10,HIGH);
+
+delay(3000);                             //Value 3000 for 3 seconds
+
+}
+
+else {
+
+digitalWrite(10,LOW);
+
+}
+
+}
+
